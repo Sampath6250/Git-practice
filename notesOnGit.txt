@@ -96,7 +96,16 @@ $ ssh-add -l
 4096 SHA256:CQgbQaE/NOC+UGwMF+ue0BUa2AkqcuCwhsBcQUK7Mi0 sampathraosam@gmail.com (RSA)
 
 
+*git remote -v
+when we run the above command from the git repo it will show the github repository it is associated with 
 
+Here is a situation we are creating a new repo locally using the 
+*git init* command it will convert any folder into a git repo
+
+Since we have created it locally, the setup goes like this
+--> first we have to create a repo in the github account.
+--> then we can run below command in the local repo as
+git remote add origin "SSH link of github repo"
 
 
 
