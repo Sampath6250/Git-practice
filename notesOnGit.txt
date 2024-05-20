@@ -58,3 +58,45 @@ this command are basically used to unstage or go the previous commit point
 *git log
 when you run this command you can see all the logs generated with the log id's 
 you can use the specific log id along with above reset command to reset the code to that particular commit
+
+
+There are 2 important things you have to watch out for are
+1) How you create clone for the repo from github into the local machine
+This is done by taking SSH like git@github.com:Sampath6250/Git-practice.git
+from the repo inside the github and running the command 
+git clone git@github.com:Sampath6250/Git-practice.git
+
+This is how the files are cloned locally when we have no file in the local machine
+
+2) how you push the local commits into the github 
+in order to prove to the github that you're the owner of the github account, which is usually done using the SSH keys
+
+2.1 
+to do this we have to generate the ssh keys locally
+ssh-keygen -t rsa -b 4096 -C "sampathraosam@gmail.com"
+rsa is type of encryption and 4096 is strength of the encryption
+
+2.2
+Once ssh keys are generated you need to add the ssh keys to the SSH agent
+
+Below are the commands to check if ssh is running or not 
+once you are in c://Users//user path
+run 
+$ eval $(ssh-agent -s)
+output: Agent pid 240
+
+adding ssh key to the ssh agent
+User@Sampath MINGW64 ~/.ssh
+$ ssh-add id_rsa
+Identity added: id_rsa (sampathraosam@gmail.com)
+
+command to check the ssh keys present in the ssh agent
+User@Sampath MINGW64 ~/.ssh
+$ ssh-add -l
+4096 SHA256:CQgbQaE/NOC+UGwMF+ue0BUa2AkqcuCwhsBcQUK7Mi0 sampathraosam@gmail.com (RSA)
+
+
+
+
+
+
