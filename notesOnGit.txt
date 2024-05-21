@@ -21,33 +21,35 @@ upload git commits to a remote repo, like github.
 5) git pull is a command used to get the changes from the remote repo to 
 your local machine, the opposite of push.
 
-There could be many branches in the code to check them we can use the "command git branch"
+6) git branch
+There could be many branches in the code to check them we can use the command "git branch"
 The above command will list the branches available on that repo and * will be present on the branch which you're currently at
 
+7) git checkout
 you can switch between the branches using the *git checkout branchName*
 
-when you want to create a new branch through locally you can use *git checkout branchName -b "svdhgsdh"
+when you want to create a new branch through locally you can use *git checkout -b branchName
 
-*git status 
+8) git status 
 Run the above command in a branch to check if any changes are made to the files under the branch and has not been committed or add to the repo
 The result of the above command will show the file names that has been created or updated, if the file is created then we have to add the file 
 before we commit the changes, However, If you're making changes to the existing file then we can skip add command and run
 git commit -am "changes description" Here a represents adding and m represent message.
 
-*git merge is a command used to merge the sub branch to the main branch, sub branches are created because more than one developer can be working
+9) git merge is a command used to merge the sub branch to the main branch, sub branches are created because more than one developer can be working
 on the main branch and so each developer can create a sub branch for there work and merge it with the main branch.
-when a merge command is execu it locally, 2 things happens
-1) a pull Request(PR) is generated to merge the branches and there is a high chance conflicts can happen during the merge operations.
-2) you can resolve the pull request from the sub branch to main branch through the GitHub or update the files locally and the code editor will guide you
+when a merge command is executed it locally, 2 things happens
+1--> a pull Request(PR) is generated to merge the branches and there is a high chance conflicts can happen during the merge operations.
+2--> you can resolve the pull request from the sub branch to main branch through the GitHub or update the files locally and the code editor will guide you
 regarding the conflicting changes it will highlight the areas, you have to handle the code changes manually in code editor like keeping the parts that are necessary
 and removing the unnecessary parts.
 
 
-*fork will be present in GitHub on top right corner it's basic purpose is, consider we are going through the public repo's of other developers and we can't make 
+10) fork will be present in GitHub on top right corner it's basic purpose is, consider we are going through the public repo's of other developers and we can't make 
 any changes to there repos, we can fork the repos and add it into our local repos and make changes as our repo's and if things are fine you can raise the 
 merge request to the original repo so that the developer can go through the code and accept the changes if they seem fine
 
-*git diff
+11) git diff
 the above command is used to check the differences in 2 branches like main and sub branch
 
 *git reset or something 
